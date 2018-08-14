@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import { Input } from 'antd';
 
+const Search = Input.Search;
 
 class Searchbar extends Component {
   render() {
     return (
-      <div className="Searchbar">
-        <input type="text" value="Type something..." />
-        <button>Search</button>
-      </div>
+      <Search
+        placeholder="input search text"
+        onSearch={value => console.log(value)}
+        style={{ width: 500 }}
+      />
     );
   }
 }
