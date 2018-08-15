@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-
+import { Pagination as SemanticPagination } from 'semantic-ui-react'
 
 class Pagination extends Component {
   render() {
     return (
-      <div className="Pagination">
-        Pagination
-      </div>
+      <SemanticPagination defaultActivePage={5} totalPages={10} />
     );
   }
 }
